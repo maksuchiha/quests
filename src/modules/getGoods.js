@@ -3,7 +3,7 @@ const getGoods = () => {
 
 
     const getData = () => {
-        fetch('/db/db.json')
+        fetch('db/db.json')
             .then(res => res.json())
             .then(data => {
                 localStorage.setItem('data', JSON.stringify(data))
@@ -18,4 +18,4 @@ const getGoods = () => {
     })
 }
 
-getGoods()
+export default getGoods
